@@ -6,6 +6,7 @@
 struct station {
     int assentos_livres;          
     int passageiros_esperando;    
+    int passageiros_embarcando;
     pthread_mutex_t mutex;        
     pthread_cond_t trem_chegou;  
     pthread_cond_t lotado_ou_livre;
